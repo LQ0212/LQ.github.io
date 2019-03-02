@@ -7,18 +7,23 @@
   
   <title>制作一个博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址">
+  <meta name="description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址 关于配置github(1)设置ssh密匙在windows下查看[c盘-&amp;gt;用户-&amp;gt;自己的用户名-&amp;gt;.ssh]下是否有i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="制作一个博客">
 <meta property="og:url" content="http://yoursite.com/2019/03/02/制作一个博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址">
+<meta property="og:description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址 关于配置github(1)设置ssh密匙在windows下查看[c盘-&amp;gt;用户-&amp;gt;自己的用户名-&amp;gt;.ssh]下是否有i">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/github官网主页.jpg">
-<meta property="og:updated_time" content="2019-03-02T03:36:47.821Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/生成ssh成功">
+<meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/打开路径1">
+<meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/保存ssh1">
+<meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/保存ssh2">
+<meta property="og:image" content="http://yoursite.com/2019/03/02/制作一个博客/保存ssh3">
+<meta property="og:updated_time" content="2019-03-02T05:44:15.847Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="制作一个博客">
-<meta name="twitter:description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址">
+<meta name="twitter:description" content="关于配置hexo博客（我觉得我是一个踩坑大王） 所以这里有很多解决方法 1、配置环境(1)下载node.jsmore info:下载地址 (2)下载gitmore info:下载地址  (3)去github官网创建自己的github账号more info:官网地址 关于配置github(1)设置ssh密匙在windows下查看[c盘-&amp;gt;用户-&amp;gt;自己的用户名-&amp;gt;.ssh]下是否有i">
 <meta name="twitter:image" content="http://yoursite.com/2019/03/02/制作一个博客/github官网主页.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -92,11 +97,12 @@
 <h2 id="1、配置环境"><a href="#1、配置环境" class="headerlink" title="1、配置环境"></a>1、配置环境</h2><h3 id="1-下载node-js"><a href="#1-下载node-js" class="headerlink" title="(1)下载node.js"></a>(1)下载node.js</h3><p>more info:<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载地址</a></p>
 <h3 id="2-下载git"><a href="#2-下载git" class="headerlink" title="(2)下载git"></a>(2)下载git</h3><p>more info:<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a> </p>
 <h3 id="3-去github官网创建自己的github账号"><a href="#3-去github官网创建自己的github账号" class="headerlink" title="(3)去github官网创建自己的github账号"></a>(3)去github官网创建自己的github账号</h3><p>more info:<a href="https://github.com/" target="_blank" rel="noopener">官网地址</a><br><img src="/2019/03/02/制作一个博客/github官网主页.jpg" alt></p>
+<h2 id="关于配置github"><a href="#关于配置github" class="headerlink" title="关于配置github"></a>关于配置github</h2><h3 id="1-设置ssh密匙"><a href="#1-设置ssh密匙" class="headerlink" title="(1)设置ssh密匙"></a>(1)设置ssh密匙</h3><p>在windows下查看[c盘-&gt;用户-&gt;自己的用户名-&gt;.ssh]下是否有id_rsa、id_rsa.pub文件，如果没有需要手动生成。<br>打开gitbush在里面输入<br><code>$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code><br>注意替换成自己注册的邮箱<br>然后回车直到出现<br><img src="/2019/03/02/制作一个博客/生成ssh成功" alt><br>就成功了<br>接下来打开<img src="/2019/03/02/制作一个博客/打开路径1" alt><br>里面的id_rsa.pub讲里面的内容复制到注册的github的setting添加ssh key里<br><img src="/2019/03/02/制作一个博客/保存ssh1" alt><br><img src="/2019/03/02/制作一个博客/保存ssh2" alt><br><img src="/2019/03/02/制作一个博客/保存ssh3" alt></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/02/制作一个博客/" data-id="cjsr0hegg0000ro7khbiuqbff" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/02/制作一个博客/" data-id="cjsr2b8t300016o7kj9onwvvb" class="article-share-link">Share</a>
       
       
     </footer>
